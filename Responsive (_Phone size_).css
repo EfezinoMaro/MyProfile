@@ -6,7 +6,7 @@
     }
     nav #logos img{
         width: 150px;
-        padding-top: 35px;
+        padding-top: 40px;
         margin-left: 25px;
     }
     #real{
@@ -106,6 +106,7 @@
     #phone{
         width: 60%;
         float: left;
+        margin-top:10px; 
     }
     .hire{
         width: fit-content;
