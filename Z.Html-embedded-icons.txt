@@ -1,0 +1,10 @@
+1) &#10094;----Prev btn{<}
+2) &#10095;----Next btn{>}
+3) &#9776;-----Menu bar icon
+4) &#x2794;----Arrow icon
+5) &#9993;-----Email-icon
+6) &times;----Times icon	
+7)
+8)
+9)
+10)

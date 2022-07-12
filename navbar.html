@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar example</title>
+</head>
+<style>
+    @media only screen and (max-width:600px){
+        nav ul{
+            display: none;
+            width: 50%;
+            position: absolute;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.603);
+        }
+        nav ul li{
+            text-align: center;
+            width: 100%;
+            color: rgb(255, 255, 255);
+        }
+        #spa{
+            font-size: 50px;
+            float: right;
+            cursor: pointer;
+        }
+
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: gray;
+    }
+    nav ul{
+        width: 50%;
+        float: right;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 20px;
+    }
+    #sppp{
+        display: none;
+    }
+</style>
+<body>
+    <nav>
+        <span id="spa" onclick="myfunction()">&times;</span>
+        <ul id="ddd">
+            <span id="spa" onclick="myfunction2()">&times;</span>
+            <li>Wash</li>
+            <li>Wash</li>
+            <li>Wash</li>
+            <li>Wash</li>
+        </ul>
+    </nav>
+    <script>
+        function myfunction(){
+            document.getElementById("ddd").style.display="block";
+        }
+        function myfunction2(){
+            document.getElementById("ddd").style.display="none";
+        }
+    </script>
+</body>
+</html>
