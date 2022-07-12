@@ -83,7 +83,7 @@
 
     .times::after{
         content:" ";
-        width:30px;
+        width:40px;
         height:2px;
         background-color: black;
         position:absolute;
@@ -94,7 +94,7 @@
     }
     .times::before{
         content:" ";
-        width:30px;
+        width:40px;
         right: 0;
         height:2px;
         background-color: black;
@@ -139,6 +139,9 @@
     }
     #Hirecontent{
         width: 50%;
+    }
+    #Hirecontent button{
+        margin-top: -10px;
     }
     #Hirecontent #close{
         margin: 10% 10px 0 0;
