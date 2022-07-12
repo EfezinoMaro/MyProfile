@@ -335,7 +335,7 @@ nav ul li:hover{
     /* text-align: center ;    */
     margin: 10vh 0 5vh 8vh;
     line-height: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089), 10px 6px 20px 0px rgba(0, 0, 0, 0.192);
 }
 .first h4{
