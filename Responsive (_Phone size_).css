@@ -5,8 +5,8 @@
         height: auto;
     }
     nav #logos img{
-        width: 160px;
-        padding-top: 35px;
+        width: 170px;
+        padding-top: 40px;
         margin-left: 25px;
     }
     #real{
@@ -106,6 +106,7 @@
     #phone{
         width: 60%;
         float: left;
+        margin-top:10px;
     }
     .hire{
         width: fit-content;
@@ -247,6 +248,9 @@
         width: 100%;
         margin: 5%;
         font-size: 15px;
+    }
+    .intouch #mailicon{
+        font-size: 50px;
     }
     .intouch p{
         line-height: 0px;
