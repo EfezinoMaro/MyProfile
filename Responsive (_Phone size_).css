@@ -51,7 +51,7 @@
     .close{
         float: right;
         font-size: 50px;
-        margin-top: -280px;
+        margin-top: -270px;
         margin-right: 22px;
         position: relative;
         transition: 0.3s;
@@ -250,7 +250,7 @@
         font-size: 15px;
     }
     .intouch #mailicon{
-        font-size: 32px;
+        font-size: 28px;
     }
     .intouch p{
         line-height: 0px;
