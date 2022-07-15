@@ -274,6 +274,7 @@ nav ul li:hover{
     transform-origin:left;
 }
 .CV-SLOT img{
+    padding-top: 5px;
     width: 35px;
     transition: 0.3s;
 }
