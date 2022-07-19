@@ -33,12 +33,12 @@ if(isset($_POST['submit'])) {
  
   //Checking if Mails sent successfully
  
-  if ($result1 && $result2) {
-    $success = "Your Message was sent Successfully!";
-  } else {
-    $failed = "Sorry! Message was not sent, Try again Later.";
-  }
+//   if ($result1 && $result2) {
+//     $success = "Your Message was sent Successfully!";
+//   } else {
+//     $failed = "Sorry! Message was not sent, Try again Later.";
+//   }
  
-}
+// }
  
 ?>
