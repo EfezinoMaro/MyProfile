@@ -814,3 +814,15 @@ footer a{
     color: rgba(255, 30, 0, 0.664);
     text-decoration: none;
 }
+.success{
+    color: green;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+.failed{
+    color: red;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
