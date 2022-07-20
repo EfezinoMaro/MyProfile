@@ -195,18 +195,6 @@ nav ul li:hover{
     float: left;
     width: 50%;
 }
-#HOME-SECTION #home-img{
-    text-align: left;
-    margin-top: -250px;
-    margin-left: -100px;
-    float: left;
-    width: 50%;
-}
-#HOME-SECTION #home-img img{
-    text-align: left;
-    z-index: -1;
-    transform: scale(1.1);
-}
 .CV-SLOT{
     margin-top: 5vh;
     margin-left: 10vh;
