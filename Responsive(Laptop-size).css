@@ -1,0 +1,613 @@
+
+@media only screen and (min-width:1200px){
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(231, 231, 231, 0.678);
+    width: 100%;
+    height: auto;
+}
+main{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+nav{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: fixed;    
+    overflow: hidden;
+    /* z-index: 1; */
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+}
+nav #logos{
+    width: 40%;
+    height: 50px;
+    position: relative;
+    float: left;
+}
+nav #logos img{
+    width: 250px;
+    padding-top: 20px;
+    float: left;
+    margin-left: 40px;
+    position: relative;
+}
+nav ul{
+    width: 60%;
+    height: 15vh;
+    float: right;
+    display: block;
+}
+#real{
+    display: inline-block;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 40px 20px 0 0 ;
+    transition: 0.5s;
+}
+nav ul li a{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration-color:rgba(109, 214, 221, 0);
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration-color: rgb(109, 214, 221);
+    text-decoration-style: solid;
+}
+#Sidenav{
+    display: none;
+}
+#Hiring{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 40px;
+    transition: 0.5s;
+    padding: 15px 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Hiring:hover{
+    background-color: rgb(136, 136, 136);
+}
+#Hirecontent{
+    width: 30%;
+    float: right;
+    position: fixed;
+    margin-left: 70%;
+    overflow: hidden;
+    transition: 0.9s;
+    background-color: rgb(227, 232, 233);
+}
+#Hirecontent form{
+    height: 100vh;
+    width: 100%;
+}
+#Hirecontent input::placeholder{
+    color: rgba(0, 0, 0, 0.582);
+    font-style: italic;
+}
+#Hirecontent input:focus{
+    outline: none;
+    border-bottom:2px solid red ;
+    /* background-color: rgba(0, 0, 0, 0.082); */
+}
+#Hirecontent input{
+    font-style: italic;
+    color: black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.842) ;
+    background-color: rgba(0, 0, 0, 0);
+}
+#Hirecontent input:hover{
+    border-bottom:2px solid red ;
+}
+#Hirecontent select{
+    width: 90%;
+    font-style: italic;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    margin: 5% 3%;
+    border-bottom:2px solid rgba(0, 0, 0, 0.842);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+}
+#Hirecontent option{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+#Hirecontent button{
+    margin-right:55px;
+    width: 100px;
+    height: 50px;
+    font-family: "Poppins1";
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    transition: 0.2s;
+    /* position:absolute; */
+    font-style: italic;
+    cursor: pointer;
+}
+#Hirecontent button:hover{
+    color: black;
+    background-color: rgba(255, 0, 0, 0.466);
+}
+.times{
+    display: none;
+}
+.hire{
+    display: none;
+}
+nav ul li a:hover{
+    color: rgb(109, 214, 221);
+}
+nav ul li:hover{
+    transform: scaleX(1.1);
+}
+.section{
+    background: auto;
+    margin-top: 10vh;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#HOME-SECTION{
+    width: 100%;
+    height: 100vh;
+    background-image: url("slider-1.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(187, 23, 23, 0.288); */
+    overflow: hidden;
+}
+#HOME-SECTION p{
+    overflow: hidden;
+    margin-top: 20vh;
+    margin-left: 10vh;
+    line-height: 60px;
+    color: black;
+    font-size: 40px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#HOME-SECTION p span{
+    font-size: 50px;
+    font-family: "Poppins3";
+}
+#HOME-SECTION #home-txt{
+    float: left;
+    width: 50%;
+}
+.CV-SLOT{
+    margin-top: 5vh;
+    margin-left: 10vh;
+    font-size: 30px;
+    font-family:"Poppins2";
+}
+.CV-SLOT a{
+    color: black;
+    text-decoration-style:wavy;
+    transition:0.5s;
+    transform-origin:left;
+}
+.CV-SLOT img{
+    width: 35px;
+    transition: 0.3s;
+}
+.CV-SLOT img:hover{
+    filter:brightness(100%);
+    transform: scale(1.1);
+}
+.CV-SLOT a:hover{
+    text-decoration-color: rgb(109, 214, 221);
+}
+#ABOUT-SECTION{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+#ABOUT-SECTION h2{
+    margin-top: 15vh;
+    font-size: 40px;
+    /* font-family: "Poppins3"; */
+    font-family:cursive;
+}
+#ABOUT-SECTION #div{
+    width: 40%;
+    transition: ease-out 0.3s;
+    margin: 10vh 0 5vh 12vh;
+    height: 118vh;
+    overflow: hidden;
+    background-color: rgba(30, 255, 255, 0.068);
+    border-radius: 20px;
+    padding: 30px 30px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+}
+#ABOUT-SECTION #div:hover{
+    transform: scale(1.01);
+    background-color: rgba(255, 254, 254, 0.521);
+}
+#ABOUT-SECTION  #div h6{
+    font-family: "Poppins1";
+    font-size: 15px;
+}
+#ABOUT-SECTION  #div p{
+    text-align: justify;
+    font-family: "Poppins2";
+}
+.first:hover{
+    transform: scale(1.01);
+    background-color: rgba(30, 255, 255, 0.075);
+}
+.first{ 
+    height: 118vh;
+    width: 45%;
+    transition:ease-out 0.3s;
+    overflow: hidden;
+    float: left;
+    background-color: rgba(255, 254, 254, 0.521);
+    /* text-align: center ;    */
+    margin: 10vh 0 5vh 8vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089), 10px 6px 20px 0px rgba(0, 0, 0, 0.192);
+}
+.first h4{
+    font-size: 20px;
+    font-family: "Poppins1";
+    /* text-align: center; */
+    color: black;
+    margin-top: 3%;
+}
+.first h6{
+    font-family:monospace;
+    font-size: 15px;
+}
+.first img{
+    transition: 0.3s;
+    margin: 0 42%;
+}
+.abtme1:hover img, .abtme2:hover img, .abtme3:hover img{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+#RESUME-SECTION{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#RESUME-SECTION h2{
+    margin-top: 15vh;
+    font-size: 40px;
+    /* font-family: "Poppins3"; */
+    font-family:cursive;
+    text-align: center;
+}
+#RESUME-SECTION h5{
+    font-family: "Poppins3";
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.664);
+    text-align: center;
+}
+#slides{
+    width: 40%;
+    height: 90vh;
+    float: left;
+    line-height: 57px;
+    background-color: rgba(255, 254, 254, 0.521);
+    border-radius: 50px;
+    padding: 30px 20px;
+    margin: 3% 1% 3% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+}
+#slides h1{
+    font-size: 20px;
+    font-family: "Poppins1";
+    text-align: center;
+}
+  #slides p{
+    font-family: "Poppins2";
+    color: rgba(0, 0, 0, 0.637);
+    margin-left: 15%;
+  }
+#slides .cover{
+    width:70%;
+    background-color: rgba(0, 0, 0, 0.267);
+    margin-left: 15%;
+}
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    font-family: "Poppins2";
+    font-size: 15px;
+    color: white;
+  }  
+  .html{
+      width: 93%;
+      background-color: rgb(109, 214, 221);
+    }
+  .css{
+      width: 81%;
+      background-color: rgb(109, 214, 221);
+    }
+  .js{
+      width: 65%; 
+      background-color: rgb(109, 214, 221);
+    }
+  .python{
+      width: 75%; 
+      background-color: rgb(109, 214, 221);
+    }
+    #sliders{
+        width: 45%;
+        height: 90vh;
+        float: left;
+        line-height: 46px;
+        background-color: rgba(255, 254, 254, 0.521);
+        border-radius: 50px;
+        padding: 30px 20px;
+        margin: 3% 1% 3% 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+    }
+    .works{
+        width: 100%;
+        height: 25vh;
+        background:linear-gradient(rgba(109, 214, 221, 0.664),rgba(255, 255, 255, 0.616),rgba(109, 214, 221, 0.671));
+        overflow: hidden;
+        float: left;
+    }
+    .work1{
+        float: left;
+        width: 15%;
+        margin: 2% 5%;
+        height: 80%;
+        text-align: center;
+        font-family: "Poppins3";
+        transition: 0.3s;
+        border-radius: 50%;
+    }
+    /* .work1:hover{
+        background: rgba(0, 0, 0, 0.171);
+        transition: 0.3s;
+    } */
+    .work1 span{
+        font-size: 40px;
+    }
+    .work1 p{
+        color: rgba(0, 0, 0, 0.521);
+    }
+    .work1 sup{
+        color: rgba(48, 180, 197, 0.37);
+    }
+    
+.Edu .edubox,.Edu .expbox,.Edu .awardbox{
+    width: 30%;
+    transition: ease-out 0.5s;
+    margin: 10vh 0 5vh 5vh;
+    height: 55vh;
+    overflow: hidden;
+    background-color: rgba(30, 255, 255, 0.068);
+    border-radius: 20px;
+    padding: 30px 30px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+}
+.Edu .edubox:hover,.Edu .expbox:hover,.Edu .awardbox:hover{
+    background-color: rgba(255, 255, 255, 0.767);
+}
+.Edu h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    /* color: rgb(109, 214, 221); */
+}
+.Edu p{
+    /* line-height: 20px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+/* .Edu h6{
+    text-align: left;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;   
+    color: rgba(0, 0, 0, 0.733);
+} */
+#PORTFOLIO-SECTION{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#PORTFOLIO-SECTION h5{
+    font-size: 40px;
+    text-align: center;
+    font-family:cursive;
+    margin-top: 15vh;
+}
+#PORTFOLIO-SECTION h2{
+    font-family: "Poppins3";
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.664);
+    text-align: center;
+}   
+
+
+
+
+.row {
+    margin: 10px -16px;
+}
+#myBtnContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 20px;
+
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.30%;
+    margin: 0%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  font-family: "Poppins3";
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+}
+
+.btn.active {
+  background-color: rgba(109, 214, 221, 0.486);
+  color: white;
+}
+#CONTACT-SECTION{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#CONTACT-SECTION h5{
+    font-size: 40px;
+    text-align: center;
+    font-family:cursive;
+    margin-top: 15vh;
+}
+#CONTACT-SECTION h3{
+    font-family: "Poppins3";
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.664);
+    text-align: center;
+}
+form{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 4%;
+    float: left;
+}
+input{
+    width:90%;
+    height: 50px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+textarea{
+    width:90%;
+    height: 200px;
+    overflow: hidden;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+#submit{
+    margin: 10px;
+    width: auto;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 40px;
+    transition: 0.5s;
+    padding: 15px 30px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.288);
+    font-family:"poppins2";
+}
+#submit:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    /* border: none; */
+}
+.intouch{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    font-size: 20px;
+    font-family: "Poppins2";
+    color: rgba(0, 0, 0, 0.596);
+    margin-left: 5%;
+    margin: 0px;
+}
+.intouch p{
+    padding: 20px;
+}
+.intouch span{
+    font-size: 30px;
+    padding:10px;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.116);
+    font-family: "Poppins1";
+    text-align: center;
+    padding-top: 30px;
+}
+footer a{
+    color: rgba(255, 30, 0, 0.664);
+    text-decoration: none;
+}
+}
