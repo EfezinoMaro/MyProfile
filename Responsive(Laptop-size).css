@@ -1,10 +1,15 @@
-
 @media only screen and (min-width:1200px){
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
+}
+*::selection{
+    background-color: rgb(0, 0, 0);
+    color: rgb(16, 245, 214);
 }
 body{
     background: rgba(231, 231, 231, 0.678);
@@ -18,10 +23,11 @@ main{
 }
 nav{
     width: 100%;
+    height: 100px;
     background: rgb(255, 255, 255);
     position: fixed;    
     overflow: hidden;
-    /* z-index: 1; */
+    z-index: 5;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
 }
@@ -42,10 +48,6 @@ nav ul{
     width: 60%;
     height: 15vh;
     float: right;
-    display: block;
-}
-#real{
-    display: inline-block;
 }
 nav ul li{
     list-style-type: none;
@@ -67,26 +69,44 @@ nav ul li a:hover{
 #Sidenav{
     display: none;
 }
+#Sidenav span{
+    filter: grayscale(100%);
+}
 #Hiring{
     color: white;
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(94, 94, 94);
     border-radius: 40px;
     transition: 0.5s;
     padding: 15px 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #Hiring:hover{
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(227, 232, 233);
 }
+
 #Hirecontent{
     width: 30%;
     float: right;
-    position: fixed;
-    margin-left: 70%;
+    z-index: 1;
     overflow: hidden;
+    position: fixed;
+    margin-left: 50%;
     transition: 0.9s;
+    height: 0vh;
     background-color: rgb(227, 232, 233);
+}
+#Hirecontent #close{
+    font-family: cursive;
+    float: right;
+    margin: 10% 30px 0 0;
+    overflow: hidden;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Hirecontent #close:hover{
+    color: red;
 }
 #Hirecontent form{
     height: 100vh;
@@ -107,8 +127,8 @@ nav ul li a:hover{
     border-bottom: 2px solid rgba(0, 0, 0, 0.842) ;
     background-color: rgba(0, 0, 0, 0);
 }
-#Hirecontent input:hover{
-    border-bottom:2px solid red ;
+#Hirecontent input:hover,#Hirecontent select:hover{
+    border-bottom-color:red ;
 }
 #Hirecontent select{
     width: 90%;
@@ -133,7 +153,8 @@ nav ul li a:hover{
     font-style: italic;
 }
 #Hirecontent button{
-    margin-right:55px;
+    margin-right:30px;
+    float:right;
     width: 100px;
     height: 50px;
     font-family: "Poppins1";
@@ -141,7 +162,6 @@ nav ul li a:hover{
     border: none;
     color: white;
     transition: 0.2s;
-    /* position:absolute; */
     font-style: italic;
     cursor: pointer;
 }
@@ -149,11 +169,15 @@ nav ul li a:hover{
     color: black;
     background-color: rgba(255, 0, 0, 0.466);
 }
-.times{
-    display: none;
+#Hirecontent button i{
+    transition: 0.3s;
+}
+#Hirecontent button:hover i{
+    margin-left: 5px;
 }
 .hire{
-    display: none;
+    transition: 0.9s;
+    display: none; 
 }
 nav ul li a:hover{
     color: rgb(109, 214, 221);
@@ -171,12 +195,10 @@ nav ul li:hover{
 #HOME-SECTION{
     width: 100%;
     height: 100vh;
-    background-image: url("slider-1.jpg");
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* background-color: rgba(187, 23, 23, 0.288); */
     overflow: hidden;
+    background-image: url("Mebg.jpg");
+    background-size:cover;
+    /* background-repeat: no-repeat; */
 }
 #HOME-SECTION p{
     overflow: hidden;
@@ -187,19 +209,35 @@ nav ul li:hover{
     font-size: 40px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#HOME-SECTION p span{
+#HOME-SECTION span{ 
     font-size: 50px;
     font-family: "Poppins3";
+    z-index: 5;
 }
 #HOME-SECTION #home-txt{
     float: left;
-    width: 50%;
+    width: 40%;
+}
+#HOME-SECTION #home-img{
+    margin-top: -100px;
+    width: 30%;
+    float: left;
+    height: auto;
+    /* position: absolute; */
+}
+#HOME-SECTION #home-img img{
+    width: 600px;
 }
 .CV-SLOT{
     margin-top: 5vh;
     margin-left: 10vh;
     font-size: 30px;
     font-family:"Poppins2";
+    text-overflow: clip;
+}
+.CV-SLOT a span{
+    font-size: 20px;
+    text-decoration: none;
 }
 .CV-SLOT a{
     color: black;
@@ -208,6 +246,7 @@ nav ul li:hover{
     transform-origin:left;
 }
 .CV-SLOT img{
+    padding-top: 5px;
     width: 35px;
     transition: 0.3s;
 }
@@ -234,7 +273,6 @@ nav ul li:hover{
     width: 40%;
     transition: ease-out 0.3s;
     margin: 10vh 0 5vh 12vh;
-    height: 118vh;
     overflow: hidden;
     background-color: rgba(30, 255, 255, 0.068);
     border-radius: 20px;
@@ -251,6 +289,7 @@ nav ul li:hover{
     font-size: 15px;
 }
 #ABOUT-SECTION  #div p{
+    line-height: 27px;  
     text-align: justify;
     font-family: "Poppins2";
 }
@@ -258,8 +297,7 @@ nav ul li:hover{
     transform: scale(1.01);
     background-color: rgba(30, 255, 255, 0.075);
 }
-.first{ 
-    height: 118vh;
+.first{
     width: 45%;
     transition:ease-out 0.3s;
     overflow: hidden;
@@ -267,23 +305,33 @@ nav ul li:hover{
     background-color: rgba(255, 254, 254, 0.521);
     /* text-align: center ;    */
     margin: 10vh 0 5vh 8vh;
+    line-height: 21px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089), 10px 6px 20px 0px rgba(0, 0, 0, 0.192);
 }
 .first h4{
     font-size: 20px;
     font-family: "Poppins1";
-    /* text-align: center; */
+    text-align: center;
     color: black;
     margin-top: 3%;
 }
 .first h6{
     font-family:monospace;
     font-size: 15px;
+    text-align: center;
 }
 .first img{
     transition: 0.3s;
     margin: 0 42%;
+    filter: grayscale(40%);
+}
+.abtme1, .abtme2, .abtme3{
+    width:80%;
+    text-align: justify;
+    margin: 3% 10%;
+    font-family: "Poppins2";
+    font-size: 13px;
 }
 .abtme1:hover img, .abtme2:hover img, .abtme3:hover img{
     transform: scale(0.9);
@@ -309,7 +357,7 @@ nav ul li:hover{
 }
 #slides{
     width: 40%;
-    height: 90vh;
+    height: auto;
     float: left;
     line-height: 57px;
     background-color: rgba(255, 254, 254, 0.521);
@@ -346,7 +394,7 @@ nav ul li:hover{
       background-color: rgb(109, 214, 221);
     }
   .css{
-      width: 81%;
+      width: 95%;
       background-color: rgb(109, 214, 221);
     }
   .js{
@@ -357,9 +405,13 @@ nav ul li:hover{
       width: 75%; 
       background-color: rgb(109, 214, 221);
     }
+    .php{
+        width: 56%;
+        background-color:rgb(109, 214, 221) ;
+    }
     #sliders{
         width: 45%;
-        height: 90vh;
+        height: auto;
         float: left;
         line-height: 46px;
         background-color: rgba(255, 254, 254, 0.521);
@@ -367,6 +419,86 @@ nav ul li:hover{
         padding: 30px 20px;
         margin: 3% 1% 3% 5%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651), 0 6px 20px 0 rgba(0, 0, 0, 0.219);
+    }
+    .progress-wrap{
+        width: 70%;
+        margin: 5% 15%;
+    }
+    #sliders h4{
+    font-size: 20px;
+    font-family: "Poppins1";
+    text-align: center;
+    }
+    .progress{
+        height: 5px;
+        box-shadow: none;
+        background: #00000049;
+        overflow: visible;
+        border-radius: 7px;
+    }
+    #sliders h3{
+        color: rgba(0, 0, 0, 0.527);
+        font-family: "Poppins2";
+        font-size: 17px;
+    }
+    .progress-bar1,.progress-bar2,.progress-bar3,.progress-bar4,.progress-bar5{
+        float: left;
+        height: 100%;
+        box-shadow: none;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #000;
+        font-weight: 600;
+        text-align: right;
+        border-radius: 2px;
+        position: relative;
+        overflow: visible;
+        background: rgb(109, 214, 221) ;
+    }
+    .progress-bar1{
+        width: 90%;
+    }
+    .progress-bar2{
+        width: 64%;
+    }
+    .progress-bar3{
+        width: 65%;
+    }
+    .progress-bar4{
+        width: 89%;
+    }
+    .progress-bar5{
+        width: 73%;
+    }
+    .progress-bar1::after,.progress-bar2::after,.progress-bar3::after,.progress-bar4::after,.progress-bar5::after{
+        position: absolute;
+        top: -2px;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        content: '';
+        /* background: #2c98f0; */
+        border-radius: 50%;
+        background: rgb(79, 158, 163);
+    }
+    .progress-wrap span {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        color: #000000;
+        outline: 1px dotted black;
+        padding: 4px;
+        font-family: "Poppins3";
+        /* border-radius: 10px; */
+    }
+    .work1 {
+        animation: blinker 2s linear infinite;
+        font-family: sans-serif;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
     }
     .works{
         width: 100%;
@@ -403,7 +535,8 @@ nav ul li:hover{
     width: 30%;
     transition: ease-out 0.5s;
     margin: 10vh 0 5vh 5vh;
-    height: 55vh;
+    height: 40vh;
+    cursor:alias;
     overflow: hidden;
     background-color: rgba(30, 255, 255, 0.068);
     border-radius: 20px;
@@ -422,17 +555,19 @@ nav ul li:hover{
     /* color: rgb(109, 214, 221); */
 }
 .Edu p{
-    /* line-height: 20px; */
+    line-height: 22px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    text-align:justify;
+    color: rgba(0, 0, 0, 0.541);
 }
-/* .Edu h6{
+.Edu h6{
     text-align: left;
     font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;   
-    color: rgba(0, 0, 0, 0.733);
-} */
+    color: rgb(0, 0, 0);
+}
 #PORTFOLIO-SECTION{
     height: auto;
     width: 100%;
@@ -467,12 +602,28 @@ nav ul li:hover{
     padding: 20px;
 
 }
+.row span{
+    outline: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.699);
+    transition: 0.5s;
+}
+.row span a{
+    text-decoration: none;
+    color: inherit  ;
+}
+.content:hover span{
+    color: white;
+    transition: 0.5s;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.30%;
-    margin: 0%;
     display: none; /* Hide all elements by default */
 }
 
@@ -489,6 +640,11 @@ nav ul li:hover{
     padding: 10px;
     transition: 0.5s;
     text-align: center;
+    width: auto;
+}
+.content:hover{
+    background-color: rgba(0, 0, 0, 0.801);
+    transition: 0.5s;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -550,6 +706,10 @@ input{
     font-size: 16px;
     transition: 0.5s;
 }
+input:focus, textarea:focus{
+    background-color: rgba(122, 120, 120, 0.336);
+    outline: 2px solid rgb(255, 0, 0);
+}
 textarea{
     width:90%;
     height: 200px;
@@ -559,6 +719,7 @@ textarea{
     margin: 10px;
     font-size: 16px;
     transition: 0.5s;
+    resize: vertical;
 }
 #submit{
     margin: 10px;
@@ -572,6 +733,9 @@ textarea{
     padding: 15px 30px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.288);
     font-family:"poppins2";
+}
+#submit span{
+    filter: grayscale(100%);
 }
 #submit:hover{
     background-color: rgb(255, 255, 255);
@@ -587,7 +751,15 @@ textarea{
     font-family: "Poppins2";
     color: rgba(0, 0, 0, 0.596);
     margin-left: 5%;
-    margin: 0px;
+}
+.intouch a{
+    text-decoration-color: rgba(245, 245, 220, 0);
+    color: inherit;
+    transition: 0.3s;
+}
+.intouch a:hover{
+    color: rgba(255, 30, 0, 0.664);
+    text-decoration-color: rgba(255, 30, 0, 0.664);
 }
 .intouch p{
     padding: 20px;
@@ -596,18 +768,34 @@ textarea{
     font-size: 30px;
     padding:10px;
     color: black;
+    filter: grayscale(100%);
+}
+.intouch span img{
+    margin: -10px 0;
 }
 footer{
     width: 100%;
     height: auto;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.116);
-    font-family: "Poppins1";
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     padding-top: 30px;
 }
 footer a{
     color: rgba(255, 30, 0, 0.664);
     text-decoration: none;
+}
+.success{
+    color: green;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+.failed{
+    color: red;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
 }
 }
